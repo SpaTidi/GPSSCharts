@@ -1,0 +1,2 @@
+# NoScreamAPI
+Screaming = Bark-Bark
