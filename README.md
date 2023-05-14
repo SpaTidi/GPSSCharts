@@ -1,4 +1,4 @@
-## GPSStoFlow
+## GPSSCHARTS
   Доступные блоки:
 - GENERATE a,b,c,d,e,f
 -   - a,b,c,d,e,f - воспринимаются как единая строка  
