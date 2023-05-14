@@ -1,4 +1,5 @@
 ## GPSSCHARTS
+## https://spatidi.github.io/GPSSCharts/
   Доступные блоки:
 - GENERATE a,b,c,d,e,f
 -   - a,b,c,d,e,f - воспринимаются как единая строка  
