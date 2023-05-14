@@ -63,4 +63,3 @@
 - - a - номер ячейки
 - - b - присваеваемое значение
 
-## https://anritool.github.io/GPSStoFlow/
