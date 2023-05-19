@@ -2,23 +2,164 @@
     [
         {
             "name":"GENERATE",
-            "params": 1,
-            [
+            "params":[
                 {
                     "x":164,
-                    "y": eh/1.5
+                    "y": 79
                 }
             ]
-    
         },
-        {}
-
-
-
-
-
-
-
+        {
+            "name":"TERMINATE",
+            "params":[
+                {
+                    "x":217,
+                    "y": 49
+                }
+            ]
+        },
+        {
+            "name":"QUEUE",
+            "params":[
+                {
+                    "x":225,
+                    "y": 39
+                },
+                {
+                    "x":164,
+                    "y": 35
+                }
+            ]
+        },
+        {
+            "name":"DEPART",
+            "params":[
+                {
+                    "x":225,
+                    "y": 17
+                },
+                {
+                    "x":164,
+                    "y": 35
+                }
+            ]
+        },
+        {
+            "name":"RELEASE",
+            "params":[
+                {
+                    "x":228,
+                    "y": 44
+                }
+            ]
+        },
+        {
+            "name":"SEIZE",
+            "params":[
+                {
+                    "x":164,
+                    "y": 35
+                }
+            ]
+        },
+        {
+            "name":"ADVANCE",
+            "params":[
+                {
+                    "x":164,
+                    "y": 35
+                }
+            ]
+        },
+        {
+            "name":"ENTER",
+            "params":[
+                {
+                    "x":225,
+                    "y": 41
+                },
+                {
+                    "x":164,
+                    "y": 35
+                }
+            ]
+        },
+        {
+            "name":"LEAVE",
+            "params":[
+                {
+                    "x":225,
+                    "y": 12
+                },
+                {
+                    "x":164,
+                    "y": 35
+                }
+            ]
+        },
+        {
+            "name":"PRIORITY",
+            "params":[
+                {
+                    "x":162,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name":"ASSIGN",
+            "params":[
+                {
+                    "x":162,
+                    "y": 12
+                }
+            ]
+        },
+        {
+            "name":"MATCH",
+            "params":[
+                {
+                    "x":208,
+                    "y": 38
+                }
+            ]
+        },
+        {
+            "name":"ASSEMBLE",
+            "params":[
+                {
+                    "x":162,
+                    "y": 10
+                }
+            ]
+        },
+        {
+            "name":"SPLIT",
+            "params":[
+                {
+                    "x":162,
+                    "y": 38
+                }
+            ]
+        },
+        {
+            "name":"GATHER",
+            "params":[
+                {
+                    "x":162,
+                    "y": 38
+                }
+            ]
+        },
+        {
+            "name":"MARK",
+            "params":[
+                {
+                    "x":226,
+                    "y": 23
+                }
+            ]
+        }
 
     ]
 }
