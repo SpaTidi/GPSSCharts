@@ -16,7 +16,7 @@ window.onload = function() {
     
     for(i = 0; i < BLOCKS.length; i++){
         keywords[i] = BLOCKS[i].name
-        preloadOne("./images/"+BLOCKS[i].name+".png",i)
+        preloadOne("./assets/"+BLOCKS[i].name+".png",i)
     }
 
     let display = document.querySelector('#textarea'); // Инициализировал и присвоил переменной элемент textarea 
@@ -55,11 +55,11 @@ window.onload = function() {
             if(words[i][0] =='' && words[i][1] == undefined)
                 continue;
             if(keywords.includes(words[i][0].toUpperCase())){
-                tmp_image.src ="./images/"+words[i][0].toUpperCase()+".png"
+                tmp_image.src ="./assets/"+words[i][0].toUpperCase()+".png"
                 height += tmp_image.height
             }
             else if(keywords.includes(words[i][1].toUpperCase())){
-                tmp_image.src ="./images/"+words[i][1].toUpperCase()+".png"
+                tmp_image.src ="./assets/"+words[i][1].toUpperCase()+".png"
                 height += tmp_image.height + 40
             }
             else height += 40;
@@ -72,13 +72,13 @@ window.onload = function() {
             if(words[i][0] =='' && words[i][1] == undefined)
                 continue;
             if(keywords.includes(words[i][0].toUpperCase())){
-                tmp_image.src ="./images/"+words[i][0].toUpperCase()+".png"
+                tmp_image.src ="./assets/"+words[i][0].toUpperCase()+".png"
                 context.drawImage(tmp_image,100,y)
                 drawParams(words[i])
                 y += tmp_image.height
             }
             else if(keywords.includes(words[i][1].toUpperCase())){
-                tmp_image.src ="./images/"+words[i][1].toUpperCase()+".png"
+                tmp_image.src ="./assets/"+words[i][1].toUpperCase()+".png"
                 context.textAlign = "start";
                 context.font = "14px Tahoma"
                 y += 20
@@ -144,7 +144,10 @@ window.onload = function() {
                         params = words[2].split(',')
                         context.font = elem.params[2].font
                         context.textAlign = elem.params[2].align
-                        context.fillText(params[5],elem.params[2].x,y +elem.params[2].y)
+                        if(params[5] != undefined) 
+                            context.fillText(params[5],elem.params[2].x,y +elem.params[2].y)
+                        else 
+                            context.clearRect(248, y+10, 25, 25);
                     }
                     if(elem.name == "TRANSFER"){
                         params = words[1].split(',')

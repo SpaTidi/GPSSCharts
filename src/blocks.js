@@ -253,7 +253,7 @@ const BLOCKS =
                     "align":"end"
                 },
                 {
-                    "x":164,
+                    "x":168,
                     "y": 35,
                     "font": "12px Tahoma",
                     "align":"center"
