@@ -8,7 +8,8 @@ window.onload = function() {
     var y = 0;
     var images = []
     var keywords =[];
-
+    var position =[];
+    
     function preloadOne(src, i) {
             images[i] = new Image();
             images[i].src = src;
@@ -75,7 +76,9 @@ window.onload = function() {
                 tmp_image.src ="./assets/"+words[i][0].toUpperCase()+".png"
                 context.drawImage(tmp_image,100,y)
                 drawParams(words[i])
+                position[i] = y;
                 y += tmp_image.height
+                
             }
             else if(keywords.includes(words[i][1].toUpperCase())){
                 tmp_image.src ="./assets/"+words[i][1].toUpperCase()+".png"
